@@ -1,5 +1,5 @@
-# customer.py
-from order import Order  # Import here to avoid circular import issues later
+
+from order import Order 
 
 
 class Customer:
@@ -23,7 +23,7 @@ class Customer:
         return self._orders
 
     def coffees(self):
-        # Return unique coffee instances from this customer's orders
+        
         return list({order.coffee for order in self._orders})
 
     def create_order(self, coffee, price):

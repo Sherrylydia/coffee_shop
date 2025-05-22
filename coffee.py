@@ -1,4 +1,4 @@
-# coffee.py
+
 
 class Coffee:
     def __init__(self, name):
@@ -24,7 +24,7 @@ class Coffee:
         return self._orders
 
     def customers(self):
-        # Return unique customers who ordered this coffee
+        
         return list({order.customer for order in self._orders})
 
     def num_orders(self):
